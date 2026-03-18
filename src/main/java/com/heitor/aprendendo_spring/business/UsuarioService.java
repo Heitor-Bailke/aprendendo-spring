@@ -1,6 +1,5 @@
 package com.heitor.aprendendo_spring.business;
 
-import ch.qos.logback.classic.spi.IThrowableProxy;
 import com.heitor.aprendendo_spring.infrastructure.entity.Usuario;
 import com.heitor.aprendendo_spring.infrastructure.exceptions.ConflictException;
 import com.heitor.aprendendo_spring.infrastructure.exceptions.ResourceNotFoundException;
@@ -12,6 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class UsuarioService {
+
 
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
